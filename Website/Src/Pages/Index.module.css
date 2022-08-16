@@ -1,0 +1,130 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules and scoped locally.
+ */
+
+.heroBanner
+{
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 996px)
+{
+    .heroBanner
+    {
+        padding: 2rem;
+    }
+}
+
+.section
+{
+    padding: 72px 0;
+}
+
+.featureHeading
+{
+    padding-top: 1rem;
+}
+
+.hero
+{
+    background-color: #2b3137;
+    padding: 48px;
+}
+
+.heroInner
+{
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.heroProjectTagline
+{
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+}
+
+.heroTitleTextHtml b
+{
+    color: var(--ifm-color-primary);
+}
+
+@keyframes jack-in-the-box
+{
+    from
+    {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50%
+    {
+        transform: rotate(-10deg);
+    }
+
+    70%
+    {
+        transform: rotate(3deg);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.indexCtas
+{
+    --ifm-button-size-multiplier: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.indexCtas a,
+.indexCtas a:hover
+{
+    color: black;
+}
+
+.indexCtas a:last-of-type
+{
+    margin: 20px 36px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .hero
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .heroInner
+    {
+        padding: 0;
+    }
+
+    .heroProjectTagline
+    {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .indexCtas
+    {
+        justify-content: center;
+    }
+
+    .indexCtas a
+    {
+        margin: 20px 36px;
+    }
+}
